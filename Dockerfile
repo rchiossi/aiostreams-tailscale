@@ -2,7 +2,7 @@
 FROM ghcr.io/viren070/aiostreams:latest AS upstream
 
 # Step 2: Use a standard Node environment that includes apt, bash, and networking tools
-FROM node:22-bookworm-slim
+FROM node:24-bookworm-slim
 
 # Install dependencies required by the Unraid Tailscale integration hook
 RUN apt-get update && apt-get install -y \

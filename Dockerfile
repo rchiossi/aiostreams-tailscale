@@ -22,6 +22,8 @@ RUN mkdir -p /nodejs/bin && ln -s /usr/local/bin/node /nodejs/bin/node
 
 WORKDIR /app
 
+ENV TS_STATE_DIR="/app/data/.tailscale_state"
+
 EXPOSE 3000
 
 ENTRYPOINT ["/nodejs/bin/node"]

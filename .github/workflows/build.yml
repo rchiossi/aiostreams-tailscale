@@ -2,7 +2,7 @@ name: Build Tailscale-Ready AIOStreams
 
 on:
   schedule:
-    - cron: '0 2 * * 0' # Runs daily at 2 AM to grab upstream updates
+    - cron: '0 2 1 * *' # Runs at 02:00, on day 1 of the month
   workflow_dispatch: # Allows you to trigger a build manually
 
 env:
